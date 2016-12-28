@@ -13,6 +13,7 @@
       </head>
       <body>
         <oxtopbar><xsl:call-template name="openxsl.titlebar" /></oxtopbar>
+
         <script><![CDATA[
           require.config({
             paths: {

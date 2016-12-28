@@ -3,10 +3,15 @@
     <xsl:template match="/root" name="openxsl.titlebar">
     <!-- className 'J_OXMod' required  -->
     <div class="J_OXMod oxmod-titlebar" ox-mod="titlebar">
-
-      <h1>
-        This is mod titlebar;
-      </h1>
+        <button class="bt-info">
+            <span class="pageinfo">
+                <em>owner: <xsl:value-of select="p/owner"/></em>
+                <em style="color:#999;"><xsl:value-of select="p/desc"/></em>
+            </span>
+            i
+        </button>
+        <button class="bt-back"></button>
+        <xsl:value-of select="p/title"/>
       </div>
     </xsl:template>
 
